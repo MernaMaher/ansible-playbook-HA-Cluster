@@ -6,3 +6,5 @@
   tasks:
      - name: Execute command 'sudo su'
        command: sudo su
+     - name: Execute command 'yum update'
+       command: yum update
