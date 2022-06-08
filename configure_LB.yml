@@ -4,7 +4,7 @@
   name: configure Load Balancer
   hosts: all
   tasks:
-     - name: Execute command 'sudo su'
-       command: sudo su
-     - name: Execute command 'yum update'
-       command: yum update
+     - name: Execute command 'sudo apt update'
+       command: sudo apt update
+     - name: Execute command 'sudo apt install yum'
+       command: sudo apt -y install yum
