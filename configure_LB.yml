@@ -1,0 +1,7 @@
+---
+
+- name: configure Load Balancer
+  hosts: all
+  tasks:
+     - name: Execute command 'sudo su'
+       command: sudo su
