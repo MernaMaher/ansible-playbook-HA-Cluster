@@ -3,8 +3,8 @@
 -
   name: configure Load Balancer
   hosts: all
+  become: true
   tasks:
-     - name: Execute command 'sudo apt update'
-       command: sudo apt update
-     - name: Execute command 'sudo apt install yum'
-       command: sudo apt -y install yum
+     - name: Run a script
+       ansible.builtin.script: configure_LB.sh
+
